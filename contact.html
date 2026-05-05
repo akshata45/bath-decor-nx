@@ -48,18 +48,6 @@
 
 
     <link rel="stylesheet" href="assets/css/style.css" />
-
-
-
-    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-
-
-
-    <!-- 
-    <link rel="stylesheet" href="assets/css/vendor.min.css">
-    <link rel="stylesheet" href="assets/css/plugins.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css">  
-    -->
 </head>
 
 <body>
@@ -68,7 +56,8 @@
 
         <!-- Header Wrapper Start -->
         <div class="header-wrapper">
-            <div class="header-sticky bg-white">
+            <div class="header-sticky bg-white"
+     style="position:fixed; top:0; left:0; width:100%; z-index:9999; height:120px;">
                 <div class="container-fluid">
                     <div class="row align-items-center">
 
@@ -192,21 +181,8 @@
     </div>
     <!-- Header Section End -->
 
-    <!-- Contact Map Start -->
-    <div class="section">
-        <div class="google-map-area w-100">
-
-            <iframe class="contact-map" src="https://www.google.com/maps?q=Bath+Decor+NX+Malad+West+Mumbai&output=embed"
-                style="width:100%; height:450px; border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-
-        </div>
-    </div>
-
-    <!-- Contact Map End -->
-
     <!-- Contact Page Section Start -->
-    <div class="section contact-content-wrapper">
+    <div class="section contact-content-wrapper" style="margin-top:140px;">
         <div class="container">
 
             <!-- Form Boxed Start -->
@@ -315,8 +291,6 @@
 
         </div>
     </div>
-
-
     <!-- Contact Page Section End -->
 
     <!-- Main Footer -->
@@ -338,15 +312,16 @@
                         style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; list-style:none; padding:0; margin-bottom:30px;">
                         <li><a href="index.html" style="color:#333; text-decoration:none; font-weight:500;">Home</a>
                         </li>
-                        <li><a href="about.html" style="color:#333; text-decoration:none; font-weight:500;">About Us</a>
-                        </li>
                         <li><a href="project.html"
-                                style="color:#333; text-decoration:none; font-weight:500;">Products</a></li>
-                        <li><a href="blog.html" style="color:#333; text-decoration:none; font-weight:500;">Stores</a></li>
-                        <!-- <li><a href="blog.html" style="color:#333; text-decoration:none; font-weight:500;">Blogs</a> -->
+                                style="color:#333; text-decoration:none; font-weight:500;">Products</a>
+                        </li>
+                        <li><a href="blog.html" style="color:#333; text-decoration:none; font-weight:500;">Visit</a>
+                        </li>
+                        <li><a href="about.html" style="color:#333; text-decoration:none; font-weight:500;">About</a>
                         </li>
                         <li><a href="contact.html"
-                                style="color:#333; text-decoration:none; font-weight:500;">Contact</a></li>
+                                style="color:#333; text-decoration:none; font-weight:500;">Contact</a>
+                        </li>
                     </ul>
 
                     <!-- Contact Info -->

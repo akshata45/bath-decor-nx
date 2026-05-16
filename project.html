@@ -192,15 +192,39 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Project Section Start Here -->
+    <style>
+        /* ACTIVE BUTTON COLOR */
+        .port-filter.active {
+            background: #ab8965 !important;
+            color: #fff !important;
+            border: none !important;
+            border-radius: 8px !important;
+        }
+
+        /* BUTTON STYLE */
+        .port-filter {
+            padding: 10px 18px !important;
+            border-radius: 8px !important;
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-height: 46px;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        /* HOVER EFFECT */
+        .port-filter:hover {
+            background: #ab8965 !important;
+            color: #fff !important;
+        }
+    </style>
+
     <div class="section project-masonry-section">
         <div class="container">
-            <style>
-                .port-filter.active {
-                    background: linear-gradient(135deg, #000, #444) !important;
-                    color: #fff !important;
-                    border: none !important;
-                }
-            </style>
 
             <div class="row mt-n2">
                 <div class="col-12">
@@ -219,16 +243,8 @@ border:1px solid rgba(255,255,255,0.3);
 box-shadow:0 8px 30px rgba(0,0,0,0.08);
 ">
 
-                        <!-- ALL BUTTON (DEFAULT ACTIVE ONLY INITIALLY) -->
-                        <button data-filter="*" class="port-filter active" style="
-padding:10px 22px;
-border-radius:30px;
-border:1px solid rgba(255,255,255,0.4);
-background:rgba(255,255,255,0.25);
-font-size:16px;
-cursor:pointer;
-transition:all 0.3s ease;
-">
+                        <!-- ALL BUTTON -->
+                        <button data-filter="*" class="port-filter active">
                             All
                         </button>
 
@@ -244,7 +260,6 @@ transition:all 0.3s ease;
                         <button data-filter=".cat-9" class="port-filter">Water Purifiers</button>
                         <button data-filter=".cat-11" class="port-filter">Wall Panels</button>
                         <button data-filter=".cat-12" class="port-filter">Stone Textures</button>
-
 
                     </div>
                 </div>
@@ -825,7 +840,7 @@ transition:all 0.3s ease;
                     </a>
                 </div>
 
-                                <!-- ================= Stone Texture ================= -->
+                <!-- ================= Stone Texture ================= -->
                 <div class="col cat-12 mb-10">
                     <a href="stonelite.html" style="text-decoration:none; color:inherit; display:block;"
                         onmouseover="this.querySelector('.single-project-wrap').style.transform='translateY(-5px)'"
@@ -849,13 +864,13 @@ transition:all 0.3s ease;
             </div>
 
             <!-- Load More -->
-            <div class="row section-padding-bottom">
+            <!-- <div class="row section-padding-bottom">
                 <div class="col-12 text-center">
                     <div class="load-more">
                         <a href="#">Explore More Products</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>

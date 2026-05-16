@@ -14951,6 +14951,7 @@ ul li {
   font-weight: 600;
   display: block;
   position: relative;
+  
 }
 .main-menu > ul > li > a::before {
   content: "";
@@ -14964,7 +14965,7 @@ ul li {
   transition: 0.3s;
 }
 .main-menu > ul > li > a:hover {
-  color: #ab8965;
+  color: #fafafa;
 }
 .main-menu > ul > li > a:hover::before {
   left: 0;
